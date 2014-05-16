@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="<?php echo base_url();?>assets/ico/favicon.ico">
 
-    <title>Sign in - User Manager</title>
+    <title>Sign up - User Manager</title>
 
     <!-- Bootstrap core CSS -->
     <link href="<?php echo base_url();?>assets/css/bootstrap.min.css" rel="stylesheet">
@@ -31,22 +31,15 @@
     <div class="container">
 
         <div class="etiquette">
-            <form class="form-signin" role="form" action="<?php echo base_url();?>index.php/login/do_login" method="post">
-              <h2 class="form-signin-heading" align="center">Login</h2><br>
-              <?php 
-                if(isset($msg)){
-              ?>
-              <div class="alert alert-danger">
-                <?php echo $msg ;?>
-              </div>
-              <?php 
-                }
-              ?>
-              <input type="email" class="form-control" placeholder="Email address" name="email" required autofocus>
+            <form class="form-signin" role="form">
+              <h2 class="form-signin-heading" align="center">Sign Up</h2><br>
+              <input type="text" class="form-control" placeholder="Username" name="username" required><br>
+              <input type="email" class="form-control" placeholder="Email address" name="email" required>
               <input type="password" class="form-control" placeholder="Password" name="password" required>
               <br>
-              <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-              <br><p align="center"><a href="<?php echo base_url();?>index.php/users/register">Create an account</a></p>
+              <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+              <br><p align="center"><a href="<?php echo base_url();?>">I have an account</a></p>
+              
             </form>
         </div>
 

@@ -1,18 +1,22 @@
 <?php
     class Login_model extends CI_Model{
         
-        function validate($user,$pass){
+        function validate($email,$pass){
            
-            $this->db->where('user', $user);
-            $this->db->where('pass', $pass);
+            $this->db->where('email-login', $email);
+            $this->db->where('pass-login', $pass);
             $this->db->from('login');
             
             $query = $this->db->get();
             
             if(count($query->result()) == 1){
+                
                 return TRUE;
+                
             } else {
+                
                 return FALSE;
+                
             }
         }
         
