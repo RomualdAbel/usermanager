@@ -9,4 +9,9 @@
             $this->db->insert('users',$data);
         }
         
+        function get_user(){
+            $query = $this->db->get('users');
+            return $query->result();
+        }
+        
     }

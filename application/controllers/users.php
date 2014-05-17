@@ -3,6 +3,7 @@
         
         function __construct() {
             parent::__construct();
+            $this->load->model('users_model','UserManager');
         }
         
         private function isvalidate(){
@@ -13,7 +14,13 @@
         
         function index(){
             $this->isvalidate();
-            $this->load->view('users_view');
+            
+            $result = $this->UserManager->get_user();
+            $data = array(
+                    'records' => $result
+                    );
+            
+            $this->load->view('users_view',$data);
         }
         
         function register(){
@@ -28,10 +35,10 @@
             $data = array(
                           'user' => $user,
                           'email' => $email,
-                          'pass' => $pass
+                          'pass' => $pass,
+                          'permission' => "user",
             );
             
-            $this->load->model('users_model','UserManager');
             $this->UserManager->register_user($data);
             redirect('login');
             
