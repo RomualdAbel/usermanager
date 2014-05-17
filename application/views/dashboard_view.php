@@ -37,7 +37,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">User Manager</a>
+          <a class="navbar-brand" href="#">
+              <img src="<?php echo base_url();?>assets/img/logo.png" alt="UserManager" style="width: 25px; height: 25px;"/>
+              User Manager
+          </a>
         </div>
         
       </div>
@@ -47,6 +50,7 @@
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
+              <br><br>
             <li class="active"><a href="#">Dashboard</a></li>
             <li><a href="<?php echo base_url();?>index.php/users">Users</a></li>
             <li><a href="<?php echo base_url();?>index.php/dashboard/logout">Logout</a></li>
@@ -56,26 +60,38 @@
           <h1 class="page-header">Dashboard</h1>
 
           <div class="row placeholders">
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
+            
+            <div class="col-xs-6 col-sm-4 placeholder">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="panel-body">
+                      Panel content
+                    </div>
+                </div>
             </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
+            <div class="col-xs-6 col-sm-4 placeholder">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="panel-body">
+                      Panel content
+                    </div>
+                </div>
             </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
+            <div class="col-xs-6 col-sm-4 placeholder">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="panel-body">
+                      Panel content
+                    </div>
+                </div>
             </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
+
           </div>
 
         </div>

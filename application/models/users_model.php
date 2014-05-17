@@ -4,9 +4,9 @@
         function __construct() {
             parent::__construct();
         }
-        
-        function register_user(){
-            
+                
+        function register_user($data){
+            $this->db->insert('users',$data);
         }
         
     }

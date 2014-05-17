@@ -3,9 +3,9 @@
         
         function validate($email,$pass){
            
-            $this->db->where('email-login', $email);
-            $this->db->where('pass-login', $pass);
-            $this->db->from('login');
+            $this->db->where('email', $email);
+            $this->db->where('pass', $pass);
+            $this->db->from('users');
             
             $query = $this->db->get();
             

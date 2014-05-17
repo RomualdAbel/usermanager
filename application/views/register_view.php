@@ -31,7 +31,7 @@
     <div class="container">
 
         <div class="etiquette">
-            <form class="form-signin" role="form">
+            <form class="form-signin" role="form" action="<?php echo base_url();?>index.php/users/do_register" method="post">
               <h2 class="form-signin-heading" align="center">Sign Up</h2><br>
               <input type="text" class="form-control" placeholder="Username" name="username" required><br>
               <input type="email" class="form-control" placeholder="Email address" name="email" required>
